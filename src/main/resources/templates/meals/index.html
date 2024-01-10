@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+<header th:replace="fragments :: header"></header>
+
+<table  class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tr th:each="meal : ${meals}">
+        <td th:text="${meal.id}"></td>
+        <td th:text="${meal.name}"></td>
+        <td th:text="${meal.description}"></td>
+    </tr>
+
+</table>
+</body>
+</html>
