@@ -7,7 +7,7 @@
         <th:block th:each="meal : ${meals}">
             <div class="form-group">
             <label>
-                <span th:text="${meal.name}"></span>
+                <span th:text="${meal.mealName}"></span>
                 <input type="checkbox"  name="mealIds"   th:value="${meal.id}"   class="form-control">
             </label>
             </div>

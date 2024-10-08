@@ -8,13 +8,13 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Name</th>
+            <th>Meal Name</th>
             <th>Description</th>
         </tr>
     </thead>
     <tr th:each="meal : ${meals}">
         <td th:text="${meal.id}"></td>
-        <td th:text="${meal.name}"></td>
+        <td th:text="${meal.mealName}"></td>
         <td th:text="${meal.description}"></td>
     </tr>
 
